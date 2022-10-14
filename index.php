@@ -5,6 +5,7 @@ include("./maininclude/header.php");
 <!-- End including Header -->
 
 <!-- Start Video Backgroound -->
+
 <div class="container-fluid removed-vid-marg">
   <div class="vid-parent">
     <video playsinline autoplay muted loop>
@@ -14,7 +15,7 @@ include("./maininclude/header.php");
     <div class="vid-overly"></div>
   </div>
   <div class="vid-content">
-    <h1 class="my-content">Welcome to Elearning</h1>
+    <h1 class="my-content">Welcome to Ganesh</h1>
     <small class="my-content">Learn and Implement</small><br><br>
     <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#stuRegModelCenter">Get Started</a>
        
