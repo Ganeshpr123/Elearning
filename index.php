@@ -15,8 +15,8 @@ include("./maininclude/header.php");
     <div class="vid-overly"></div>
   </div>
   <div class="vid-content">
-    <h1 class="my-content">Welcome to Ganesh 2.0 appul</h1>
-    <small class="my-content">Learn and HACK</small><br><br>
+    <h1 class="my-content">Welcome to Elerning</h1>
+    <small class="my-content">Learn and know</small><br><br>
     <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#stuRegModelCenter">Get Started</a>
        
        
