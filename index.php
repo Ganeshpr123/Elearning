@@ -16,7 +16,7 @@ include("./maininclude/header.php");
   </div>
   <div class="vid-content">
     <h1 class="my-content">Welcome to Ganesh </h1>
-    <small class="my-content">Learn and Earn</small><br><br>
+    <small class="my-content">Learn and Earn TO</small><br><br>
     <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#stuRegModelCenter">Get Started</a>
        
        
