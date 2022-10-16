@@ -110,11 +110,11 @@
     </div>
 
 
-<!-- End Student Login -->
+<!-- End Student Login Model -->
 
  <!-- Start Admin Login -->
 
-  <!-- Modal -->
+  <!-- Model -->
   <div class="modal fade" id="adminLoginModelCenter" tabindex="-1" role="dialog" aria-labelledby="adminLoginModelCenterLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -126,7 +126,8 @@
           </div>
           <div class="modal-body">
             <!-- Start Admin Login Form -->
-                          <form id="adminLoginForm">
+            <form action="adminlogin.php" method="POST">      
+            <!-- <form id="adminLoginForm"> -->
                  
                   <div class="form-group">
                      <i class="fas fa-envelope"></i><label for="adminLogmail" class="pl-2 font-weight-bold">Email</label><input type="email" class="form-control" placeholder="Email" name="adminLogemail" id="adminLogemail">
@@ -135,22 +136,23 @@
                   <div class="form-group">
                      <i class="fas fa-key"></i><label for="adminLogpass" class="pl-2 font-weight-bold">Password</label><input type="password" class="form-control" placeholder="Password" name="adminLogpass" id="stuLogpass">
                   </div>
-                  
-                </form>
+             
                 <!-- End Admin Login Form -->
           </div>
           
           <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="adminLoginBtn">Login</button>
+          <button type="submit"  name="admlogin" class="btn btn-primary" id="adminLoginBtn">Login</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
             
           </div>
+                
+          </form>
         </div>
       </div>
     </div>
 
 
-<!-- End Admin Login -->
+<!-- End Admin Login Model -->
 
  
 

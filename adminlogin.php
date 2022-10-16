@@ -2,8 +2,8 @@
 session_start();
 include 'dbconn.php';
 
-#For Login
-if(isset($_POST['login'])){
+#For Login admin
+if(isset($_POST['admlogin'])){
 
   function validate($data){
    $data = trim($data);
@@ -12,8 +12,9 @@ if(isset($_POST['login'])){
       return $data;
   }
                 
-   $email = validate($_POST['stuLogemail']);
-   $pass = validate($_POST['stuLogpass']);
+   $aemail = validate($_POST['adminLogmail']);
+   $apass = validate($_POST['adminLogpass']);
+   
 
  if(empty($email)){
        header("Location:index.php?error= email is required");
@@ -23,21 +24,21 @@ if(isset($_POST['login'])){
       exit();
       }else{ 
       
-        $sqle= "SELECT * FROM student WHERE stu_email ='$email' AND stu_pass='$pass'";
+        $sqle= "SELECT * FROM `admin` WHERE admin_email ='$aemail' AND admin_pass='$apass'";
         $result = mysqli_query($conn, $sqle);
                                 
                                 
                                 
          if(mysqli_num_rows($result) == 1){
           $row = mysqli_fetch_assoc($result);
-          $_SESSION['is_login']= true;
-          $_SESSION['email'] = $row['stu_email'];
-          $_SESSION['password'] = $row['stu_pass'];
+          
+          $_SESSION['email'] = $row['admin_email'];
+          $_SESSION['password'] = $row['admin_pass'];
           
           echo"
           <script> 
           alert('Login Successful');
-          window.location.href='index.php';        
+          window.location.href='home.php';        
           </script>          
         ";
           exit();

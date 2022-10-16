@@ -17,7 +17,15 @@ include("./maininclude/header.php");
   <div class="vid-content">
     <h1 class="my-content">Welcome to Elearning</h1>
     <small class="my-content">Learn and Implement</small><br><br>
-    <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#stuRegModelCenter">Get Started</a>
+
+    <?php
+    if(!isset($_SESSION['is_login'])){
+     echo '<a href="#" class="btn btn-danger mt-3" data-toggle="modal" data-target="#stuRegModelCenter">Get Started</a>';
+    }else{
+      echo'<a href="#" class="btn btn-primary mt-3">My Profile</a>';
+    }
+    ?>
+    
        
        
     
