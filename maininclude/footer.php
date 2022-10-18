@@ -88,7 +88,7 @@
                           <form action="stulogin.php" method="POST">
                  
                   <div class="form-group">
-                     <i class="fas fa-envelope"></i><label for="stueLogmail" class="pl-2 font-weight-bold">Email</label><input type="email" class="form-control" placeholder="Email" name="stuLogemail" id="stuLogemail">
+                     <i class="fas fa-envelope"></i><label for="adminlogin" class="pl-2 font-weight-bold">Email</label><input type="email" class="form-control" placeholder="Email" name="stuLogemail" id="stuLogemail">
                      
                   </div>
                   <div class="form-group">
@@ -114,45 +114,46 @@
 
  <!-- Start Admin Login -->
 
-  <!-- Model -->
-  <div class="modal fade" id="adminLoginModelCenter" tabindex="-1" role="dialog" aria-labelledby="adminLoginModelCenterLabel" aria-hidden="true">
+
+
+
+<!-- ---------------------------------------------------------------------------------- -->
+
+
+<div class="modal fade" id="adminLoginModelCenter" tabindex="-1" role="dialog" aria-labelledby="adminLoginModelCenterLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="adminLoginModelCenterLabel">Admin Login</h5>
+            <h5 class="modal-title"  id="adminLoginModelCenterLabel">admin Login</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <!-- Start Admin Login Form -->
-            <form action="adminlogin.php" method="POST">      
-            <!-- <form id="adminLoginForm"> -->
+            <!-- Start admin Login Form -->
+                          <form action="adminlogin.php" method="POST">
                  
                   <div class="form-group">
-                     <i class="fas fa-envelope"></i><label for="adminLogmail" class="pl-2 font-weight-bold">Email</label><input type="email" class="form-control" placeholder="Email" name="adminLogemail" id="adminLogemail">
+                     <i class="fas fa-envelope"></i><label for="adminlogin" class="pl-2 font-weight-bold">Email</label><input type="email" class="form-control" placeholder="Email" name="adminLogmail" id="adminLogmail">
                      
                   </div>
                   <div class="form-group">
-                     <i class="fas fa-key"></i><label for="adminLogpass" class="pl-2 font-weight-bold">Password</label><input type="password" class="form-control" placeholder="Password" name="adminLogpass" id="stuLogpass">
+                     <i class="fas fa-key"></i><label for="adminLogpass" class="pl-2 font-weight-bold">Password</label><input type="password" class="form-control" placeholder="Password" name="adminLogpass" id="adminLogpass">
                   </div>
-             
-                <!-- End Admin Login Form -->
+                  
+       
+                <!-- End Student Login Form -->
           </div>
           
           <div class="modal-footer">
-          <button type="submit"  name="admlogin" class="btn btn-primary" id="adminLoginBtn">Login</button>
+          <button type="submit" name="admlogin" class="btn btn-primary" id="adminLoginBtn">Login</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
             
           </div>
-                
           </form>
         </div>
       </div>
     </div>
-
-
-<!-- End Admin Login Model -->
 
  
 

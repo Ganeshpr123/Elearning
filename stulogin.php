@@ -39,7 +39,7 @@ if(isset($_POST['login'])){
           alert('Login Successful');
           window.location.href='index.php';        
           </script>          
-        ";
+         ";
           exit();
              }else {
                      header("Location:index.php?error=User Not Found or Incorrect password dddd");

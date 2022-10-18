@@ -4,27 +4,26 @@ include 'dbconn.php';
 
 #For Login admin
 if(isset($_POST['admlogin'])){
+  // if(isset($_POST['adminlogemail']) && isset($_POST['adminlogpass'])){
 
-  function validate($data){
-   $data = trim($data);
-   $data = stripslashes($data);
-   $data = htmlspecialchars($data);
-      return $data;
-  }
-                
-   $aemail = validate($_POST['adminLogmail']);
-   $apass = validate($_POST['adminLogpass']);
+           
+    
+    function validate($data){
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+         return $data;
+     }
+                   
+      $adminemail = validate($_POST['adminLogmail']);
+      $adminpass = validate($_POST['adminLogpass']);
+
+
    
 
- if(empty($email)){
-       header("Location:index.php?error= email is required");
-      exit();
-   }else if(empty($pass)){
-       header("Location:index.php?error=password is required");
-      exit();
-      }else{ 
+//
       
-        $sqle= "SELECT * FROM `admin` WHERE admin_email ='$aemail' AND admin_pass='$apass'";
+        $sqle= "SELECT * FROM admin WHERE  admin_email='$adminemail' AND admin_pass='$adminpass'";
         $result = mysqli_query($conn, $sqle);
                                 
                                 
@@ -46,7 +45,7 @@ if(isset($_POST['admlogin'])){
                      header("Location:index.php?error=User Not Found or Incorrect password dddd");
                      exit();
                      }
-                      }
+                      
                                 
                                 
                        }else{
