@@ -5,7 +5,7 @@ include 'dbconn.php';
 #For Login admin
 if(isset($_POST['admlogin'])){
   // if(isset($_POST['adminlogemail']) && isset($_POST['adminlogpass'])){
-
+// console.log("Button Clicked");
            
     
     function validate($data){
@@ -37,7 +37,7 @@ if(isset($_POST['admlogin'])){
           echo"
           <script> 
           alert('Login Successful');
-          window.location.href='home.php';        
+          window.location.href='admin/adminDashboard.php';        
           </script>          
         ";
           exit();

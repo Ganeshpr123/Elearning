@@ -114,12 +114,6 @@
 
  <!-- Start Admin Login -->
 
-
-
-
-<!-- ---------------------------------------------------------------------------------- -->
-
-
 <div class="modal fade" id="adminLoginModelCenter" tabindex="-1" role="dialog" aria-labelledby="adminLoginModelCenterLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
