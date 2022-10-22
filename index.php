@@ -19,7 +19,7 @@ include("./maininclude/header.php");
     <small class="my-content">Learn and Implement</small><br><br>
 
     <?php
-    if(!isset($_SESSION['is_login'])){
+    if(!isset($_SESSION['is_loginn'])){
      echo '<a href="#" class="btn btn-danger mt-3" data-toggle="modal" data-target="#stuRegModelCenter">Get Started</a>';
     }else{
       echo'<a href="#" class="btn btn-primary mt-3">My Profile</a>';

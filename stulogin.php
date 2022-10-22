@@ -30,7 +30,7 @@ if(isset($_POST['login'])){
                                 
          if(mysqli_num_rows($result) == 1){
           $row = mysqli_fetch_assoc($result);
-          $_SESSION['is_login']= true;
+          $_SESSION['is_loginn']= true;
           $_SESSION['email'] = $row['stu_email'];
           $_SESSION['password'] = $row['stu_pass'];
           
