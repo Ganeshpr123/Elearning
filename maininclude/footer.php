@@ -85,7 +85,7 @@
           </div>
           <div class="modal-body">
             <!-- Start Student Login Form -->
-                          <form action="stulogin.php" method="POST">
+                          <form action="./stulogin.php" method="POST">
                  
                   <div class="form-group">
                      <i class="fas fa-envelope"></i><label for="adminlogin" class="pl-2 font-weight-bold">Email</label><input type="email" class="form-control" placeholder="Email" name="stuLogemail" id="stuLogemail">

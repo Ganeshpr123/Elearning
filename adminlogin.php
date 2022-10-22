@@ -21,7 +21,7 @@ if(isset($_POST['admlogin'])){
 
    
 
-//
+
       
         $sqle= "SELECT * FROM admin WHERE  admin_email='$adminemail' AND admin_pass='$adminpass'";
         $result = mysqli_query($conn, $sqle);
