@@ -38,6 +38,7 @@
      <li class="nav-item custom-nav-item"><a href="courses.php" class="nav-link">Courses</a></li>
      <li class="nav-item custom-nav-item"><a href="paymentstatus.php" class="nav-link">Payment Status</a></li>
      <?php
+     session_set_cookie_params(0, '/', '.elearnservice.tk');
       session_start();
       if(isset($_SESSION['is_login'])){
         echo'<li class="nav-item custom-nav-item"><a href="#" class="nav-link">My Profile</a></li>
