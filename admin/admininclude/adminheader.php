@@ -70,7 +70,7 @@
                     </a>
                </li>
                <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="adminchangepass.php">
                        <i class="bi bi-key-fill"></i> Change Password                 
                     </a>
                </li>

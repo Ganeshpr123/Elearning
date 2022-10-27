@@ -17,13 +17,15 @@ if(isset($_POST['courseSubmitBtn'])){
     $course_original_price = $_REQUEST['course_original_price'];
      
 //     for storing image in server folder and capture img file name
-    $course_image = $_FILES['course_img']['name'];
+    $name = $_FILES['course_img']['name'];
 //    send it into temp folder for take the img name in further
-    $course_image_temp = $_FILES['course_img']['temp_name'];
+    $temp_name = $_FILES['course_img']['tmp_name'];
 //     img save into folder in database storage
-    $img_folder = '../image/courseimg/'.$course_image;
+    $img_folder = '../image/courseimg/'.$name;
+    
+
 //     next img move to the folder
-    move_uploaded_file($course_image_temp,$img_folder);
+    move_uploaded_file($temp_name,$img_folder);
 
 
     $sql="INSERT INTO course (course_name,course_desc,course_author,course_img,course_duration,course_price,course_original_price) VALUES('$course_name','$course_desc','$course_author','$img_folder','$course_duration','$course_price','$course_original_price')";

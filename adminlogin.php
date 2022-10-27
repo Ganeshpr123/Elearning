@@ -31,8 +31,10 @@ if(isset($_POST['admlogin'])){
          if(mysqli_num_rows($result) == 1){
           $row = mysqli_fetch_assoc($result);
           
-          $_SESSION['email'] = $row['admin_email'];
+          $_SESSION['emaill'] = $row['admin_email'];
           $_SESSION['password'] = $row['admin_pass'];
+
+          
           
           echo"
           <script> 
