@@ -26,8 +26,16 @@ if(isset($_POST['submit'])){
    $sql = "INSERT INTO `student`(`stu_name`, `stu_email`, `stu_pass`) VALUES ('$name','$email','$pass')" ;
    if ( mysqli_query ($conn , $sql ) )
    {
-    // echo " Data Inerted " ;
-   header ( " location : home.php " ) ;
+  //   echo " Data Inerted " ;
+  //  header ( " location : home.php " ) ;
+  echo"
+            <script> 
+            alert('Registration Successful');
+            window.location.href='index.php';        
+            </script>          
+          ";
+  // //         header("Location:home.php");
+  //         exit();
    }
   //  else
   //  {
