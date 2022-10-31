@@ -45,7 +45,7 @@
                     </a>
                </li>
                <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="./lessons.php">
                        <i class="bi bi-book-fill"></i> Lessons                 
                     </a>
                </li>
@@ -75,7 +75,7 @@
                     </a>
                </li>
                <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="alogout.php">
                        <i class="fa fa-sign-out" aria-hidden="true"></i> Logout                 
                     </a>
                </li>

@@ -4,7 +4,7 @@ include('../dbconn.php');
 ?>
 <div class="col-sm-9 mt-5">
             <!-- Table -->
-            <p class="bg-dark text-white p-2">List ofCourses</p>
+            <p class="bg-dark text-white p-2">List of Courses</p>
             <?php
             $sql = "SELECT * FROM course";
             $result = $conn->query($sql);

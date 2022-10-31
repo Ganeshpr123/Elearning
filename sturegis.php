@@ -26,24 +26,16 @@ if(isset($_POST['submit'])){
    $sql = "INSERT INTO `student`(`stu_name`, `stu_email`, `stu_pass`) VALUES ('$name','$email','$pass')" ;
    if ( mysqli_query ($conn , $sql ) )
    {
-  //   echo " Data Inerted " ;
-  //  header ( " location : home.php " ) ;
+  
   echo"
             <script> 
             alert('Registration Successful');
             window.location.href='index.php';        
             </script>          
           ";
-  // //         header("Location:home.php");
-  //         exit();
+ 
    }
-  //  else
-  //  {
-  //  echo " Data not Inerted " ;
-  //  }
-  //  }
-
-   // }
+ 
    else
    {
                     echo"
@@ -55,31 +47,6 @@ if(isset($_POST['submit'])){
    }
  }
 }
-
-//    $name = $_POST['stuname'];
-//    $email = $_POST['stuemail'];
-//    $pass = $_POST['stupass'];
-   
-//    $sql="INSERT INTO `student`(`stu_name`, `stu_email`, `stu_pass`) VALUES ('$name',' $email',' $pass')";
-   
-      // mysqli_query($conn, $sql);
-//       echo"
-//           <script> 
-//           alert('Registration Successful');
-//           window.location.href='index.php';        
-//           </script>          
-//         ";
-// //         header("Location:home.php");
-//         exit();
-    
-       
-//     }else{
-
-//        echo"error";
-
-
-//     }
-
 
 
 
